@@ -1,0 +1,57 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+header {
+	 background-color: red; 
+	 height: 100px; 
+	 margin-bottom: 25px;  
+	 background-image: url("seinfeldtrivia.jpg");
+	 /*background-repeat: no-repeat; */
+	 background-position: center center; 
+	 background-size: 20% 100%; 
+	 border: 2px solid cadetblue;
+	 /*background-size: contain;*/
+	 
+ }
+aside { 
+	margin-top: 100px; 
+	text-align: center; 
+}
+aside button { 
+	padding: 25px 40px; 
+	background-color: cadetblue; 
+	font-size: 20px; 
+	cursor: pointer;
+	border: 2px solid red; 
+}
+main {
+	display: none;
+	margin-left: 30px;
+}
+main.active { 
+	display: block; 
+}
+main.active + aside { 
+	display: none; 
+}
+main.active ~ footer { 
+	display: block; 
+}
+main a { 
+	display: block; 
+	text-decoration: none; 
+	color: black; 
+}
+main a:hover { 
+	background-color: yellow; 
+}
+footer { 
+	display: none; 
+	background-color: cadetblue;
+	margin-top: 25px; 
+	padding: 20px 0; 
+	text-align: center; 
+	font-size: 2em; 
+	border: 2px solid red;
+}
